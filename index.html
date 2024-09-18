@@ -30,8 +30,7 @@
             height: 70px;
             margin-bottom: 30px;
             border-radius: 50%;
-            margin-right:3vw;
-           
+            margin-right: 3vw;
         }
 
         h1 {
@@ -59,13 +58,13 @@
             gap: 40px;
             margin-bottom: 40px;
         }
+
         .options {
             display: flex;
             justify-content: center;
             gap: 40px;
             padding: 23px;
             text-align: center;
-            /* margin-bottom: 40px; */
         }
 
         .nav a, .nav button {
@@ -91,28 +90,9 @@
             padding: 50px;
         }
 
-        .info-box1 {
+        .info-box1, .info-box2, .info-box3 {
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px 30px 21px 30px;
-            font-size: 3vh;
-            margin-left: 100px;
-            /* padding-left: 2px; */
-            border-radius: 20px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.6s ease;
-            margin-bottom: 4vh;
-            font-weight: 300;
-            cursor: pointer;
-
-        }
-        .info-box2 {
-            background-color: rgba(255, 255, 255, 0.1);
-            font-size: 3vh;
-
-            padding: 40px;
-            margin-left: 10px;
-
+            padding: 20px 30px;
             border-radius: 20px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -120,76 +100,110 @@
             font-weight: 300;
             cursor: pointer;
         }
-        .info-box3 {
-            background-color: rgba(255, 255, 255, 0.1);
-            margin-right: 23px;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.6s ease;
-            cursor: pointer;
-        }
 
-        .info-box1:hover {
+        .info-box1:hover, .info-box2:hover, .info-box3:hover {
             transform: translateY(-20px);
         }
 
-        .info-box1 h3 {
+        .info-box1 h3, .info-box2 h3, .info-box3 h3 {
             font-size: 2.5rem;
         }
 
-        .info-box1 p {
+        .info-box1 p, .info-box2 p, .info-box3 p {
             font-size: 1.2rem;
         }
-        .info-box2:hover {
-            transform: translateY(-20px);
-        }
 
-        .info-box2 h3 {
-            font-size: 2.5rem;
-        }
-
-        .info-box2 p {
-            font-size: 1.2rem;
-        }
-        .info-box3:hover {
-            transform: translateY(-20px);
-        }
-
-        .info-box3 h3 {
-            font-size: 2.5rem;
-        }
-
-        .info-box3 p {
-            font-size: 1.2rem;
-        }
-        
         .character {
             width: 350px;
             height: 350px;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
             position: relative;
-            top: -50px; 
+            top: -50px;
         }
 
         .footer {
             margin-top: 90px;
-            color:white;
-            /* background-color: rgba(255, 255, 255, 0.696); */
+            color: white;
             padding: 15px 30px;
             border-radius: 25px;
             text-align: center;
             font-size: 1.2rem;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 1024px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-box1, .info-box2, .info-box3 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .character {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .character {
+                width: 250px;
+                height: 250px;
+            }
+
+            .info-box1, .info-box2, .info-box3 {
+                padding: 15px 25px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .character {
+                width: 200px;
+                height: 200px;
+            }
+
+            .info-box1, .info-box2, .info-box3 {
+                padding: 10px 20px;
+            }
+
+            .options {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav a, .nav button {
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        
         <div class="nav">
-            <!-- <div class="logo"></div> -->
             <img src="SolitaryLogo.png" alt="Solitary Logo" class="logo">
             <div class="options">
                 <a href="#">Events</a>
@@ -199,16 +213,13 @@
                 <a href="#">Resources</a>
                 <button>Register Now</button>
             </div>
-           
         </div>
-        
+
         <h1>Solitary Maximizing</h1>
         <h1>Students Experience</h1>
         <h2>At Solitary, we aim to enhance your experience by optimizing your performance through collaboration and community growth.</h2>
-        
-       
+
         <div class="info-section">
-            
             <div>
                 <div class="info-box1">
                     <h3>20+</h3>
@@ -220,10 +231,8 @@
                 </div>
             </div>
 
-            <!-- img -->
             <img src="image.png" alt="Character" class="character">
 
-            
             <div class="info-box3">
                 <p>This website is designed for community service of IITM BS</p>
             </div>
@@ -233,64 +242,33 @@
     <div class="footer">
         <p>&copy;2023 Solitary - All Rights Reserved</p>
     </div>
-    <script src="script.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <!-- GSAP Animations -->
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        // Smooth Scroll Triggered Animations
         gsap.from("h1", {
             opacity: 0,
             x: -100,
-            duration: 1,
-            // scrollTrigger: {
-            //     trigger: "h1",
-            //     start: "top 80%",
-            //     end: "bottom 20%",
-            //     scrub: true
-            // }
+            duration: 1
         });
+
         gsap.from("h2", {
             opacity: 0,
             x: 200,
-            duration: 1.5,
-            // scrollTrigger: {
-            //     trigger: "h1",
-            //     start: "top 80%",
-            //     end: "bottom 20%",
-            //     scrub: true
-            // }
-        });
-           gsap.from(".options", {
-            opacity: 0,
-            y:-80,
-            duration: 1.5,
-            stagger: 0.2, 
-            ease: "power2.out" 
-            // scrollTrigger: {
-            //     trigger: "h1",
-            //     start: "top 80%",
-            //     end: "bottom 20%",
-            //     scrub: true
-            // }
+            duration: 1.5
         });
 
-            // Color Change on Scroll for Background
-    // gsap.to("body", {
-    //     background: "linear-gradient(115deg, #1A1A3C, #512B58, #800080)", // New colors
-    //     duration: 2,
-    //     scrollTrigger: {
-    //         trigger: ".info-item2",
-    //         start: "top 50%",
-    //         end: "bottom 10%",
-    //         scrub: true
-    //     }
-    // });
-        gsap.from(".info-box1", {
+        // gsap.from(".options a, .options button", {
+        //     opacity: 0,
+        //     y: -80,
+        //     duration: 1.5,
+        //     stagger: 0.2,
+        //     ease: "power2.out"
+        // });
+
+        gsap.from(".info-box1, .info-box2, .info-box3", {
             opacity: 0,
             y: 200,
             stagger: 0.3,
@@ -303,33 +281,17 @@
             }
         });
 
-        gsap.from(".info-box2", {
-            opacity: 0,
-            y: 200,
-            stagger: 0.3,
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".info-section",
-                start: "top 90%",
-                end: "bottom 30%",
-                scrub: true
-            }
-        });
-        gsap.from(".info-box3", {
-            opacity: 0,
-            y: 200,
-            stagger: 0.3,
-            duration: 1,
-            scrollTrigger: {
-                trigger: ".info-section",
-                start: "top 90%",
-                end: "bottom 30%",
-                scrub: true
-            }
-        });
-
-
-        // Floating Image Parallax Effect
+        // gsap.from(".character", {
+        //     y: 100,
+        //     duration: 1.5,
+        //     ease: "power1.out",
+        //     scrollTrigger: {
+        //         trigger: ".character",
+        //         start: "top 85%",
+        //         end: "bottom 40%",
+        //         scrub: true
+        //     }
+        // });
         gsap.from(".character", {
             y: 100,
             duration: 1.5,
