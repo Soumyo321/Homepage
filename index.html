@@ -10,12 +10,12 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(115deg,#270235,#420046,#4C004A, #89009A, #2E054C,#290346,#140430);
+            background: linear-gradient(115deg, #270235, #420046, #4C004A, #89009A, #2E054C, #290346, #140430);
             color: #fff;
+            overflow-x: hidden;
         }
 
         .container {
-            margin-left: 2vh;
             padding: 2vw;
             display: flex;
             flex-direction: column;
@@ -28,21 +28,20 @@
         .logo {
             width: 150px;
             margin-bottom: 30px;
-            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
         }
 
         h1 {
             color: #EDDCEC;
             font-size: 4.5rem;
             font-weight: 500vw;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
             margin-top: 7vh;
+            letter-spacing: 2px;
             margin-bottom: 0.5vh;
             line-height: 1.1;
         }
 
         h2 {
+            margin-top: 9vh;
             font-size: 1.6rem;
             font-weight: 400;
             margin-bottom: 40px;
@@ -57,8 +56,7 @@
             margin-bottom: 40px;
         }
 
-        .nav a {
-           
+        .nav a, .nav button {
             padding: 10px 25px;
             text-decoration: none;
             color: #fff;
@@ -67,171 +65,116 @@
             transition: all 0.3s ease-in-out;
         }
 
-        .nav a:hover {
+        .nav a:hover, .nav button:hover {
             background-color: rgba(255, 255, 255, 0.3);
             transform: scale(1.05);
         }
-        .reg :hover{
-            background-color: rgb(29, 10, 29);
-        }
-        .nav button{
-            margin-left: 9vw;
 
-            padding: 10px 25px;
-            text-decoration: none;
-            color: #fff;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 25px;
-            transition: all 0.3s ease-in-out;
-        }
-        .nav button:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-            transform: scale(1.05);
-        }
-/* 
-        .info {
+        .info-section {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             gap: 50px;
-            flex-wrap: wrap;
-        } */
-        .info {
-    display: flex;
-    flex-direction: column; /* Stack the items vertically */
-    align-items: flex-start; /* Align items to the left side of the screen */
-    gap: 20px; /* Add vertical space between the two items */
-    margin-top: 20px;
-}
-
-.info-item1, .info-item2 {
-    /* justify-content: space-between;
-     */
-     /* gap: 3px; */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left; /* Text aligned to the left */
-    width: 300px; /* Set a fixed width for both cards */
-    margin-left: -23vw; /* Ensure the items are aligned to the left */
-    color: white; /* Text color */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
-}
-
-h3 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-p {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.info-item3 {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left; /* Text aligned to the left */
-    width: 300px; /* Set a fixed width for both cards */
-    margin-left: 78%; /* Ensure the items are aligned to the left */
-    color: white; /* Text color */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
-}
-
-
-
-        .info-item1 {
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 30px 5px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            width: 100%;
+            padding: 50px;
         }
 
-        .info-item1:hover {
+        .info-box1 {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px 21px 30px;
+            font-size: 3vh;
+            margin-left: 100px;
+            /* padding-left: 2px; */
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.6s ease;
+            margin-bottom: 4vh;
+            font-weight: 300;
+            cursor: pointer;
+
+        }
+        .info-box2 {
+            background-color: rgba(255, 255, 255, 0.1);
+            font-size: 3vh;
+
+            padding: 40px;
+            margin-left: 10px;
+
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.6s ease;
+            font-weight: 300;
+            cursor: pointer;
+        }
+        .info-box3 {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 23px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.6s ease;
+            cursor: pointer;
+        }
+
+        .info-box1:hover {
             transform: translateY(-20px);
         }
 
-        .info-item1 h3 {
+        .info-box1 h3 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
         }
 
-        .info-item1 p {
+        .info-box1 p {
             font-size: 1.2rem;
-            font-weight: 300;
+        }
+        .info-box2:hover {
+            transform: translateY(-20px);
         }
 
-
-        .info-item2 {
-            margin-top: 7vh;
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 20px 50px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            line-height: 4vw;
-        }
-
-        .info-item2:hover {
-            transform: translateY(-30px);
-        }
-
-        .info-item2 h3 {
+        .info-box2 h3 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
         }
 
-        .info-item2 p {
+        .info-box2 p {
             font-size: 1.2rem;
-            font-weight: 300;
+        }
+        .info-box3:hover {
+            transform: translateY(-20px);
         }
 
+        .info-box3 h3 {
+            font-size: 2.5rem;
+        }
+
+        .info-box3 p {
+            font-size: 1.2rem;
+        }
+        
         .character {
             width: 350px;
+            height: 350px;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
-            margin-top: 20px;
+            position: relative;
+            top: -50px; 
         }
 
         .footer {
-            margin-top: 50px;
-            background-color: rgba(255, 255, 255, 0.1);
+            margin-top: 90px;
+            color:white;
+            /* background-color: rgba(255, 255, 255, 0.696); */
             padding: 15px 30px;
             border-radius: 25px;
             text-align: center;
             font-size: 1.2rem;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
-
-        
-        .info-item3 {
-            margin-top: -35vh;
-            background-color: rgba(255, 255, 255, 0.15);
-            padding: 20px 50px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.6s ease;
-            line-height: 4vw;
-        }
-
-        .info-item3:hover {
-            transform: translateX(30px);
-        }
-
-        .footer p {
-            margin: 0;
-        }
     </style>
 </head>
 <body>
-   
     <div class="container">
-        
-        
         <div class="nav">
             <img src="logo.png" alt="Solitary Logo" class="logo">
             <a href="#">Events</a>
@@ -239,42 +182,156 @@ p {
             <a href="#">Society and Clubs</a>
             <a href="#">Houses</a>
             <a href="#">Resources</a>
-            <!-- <div class="reg">
-                <a  id ="reg1" href="#">Register Now</a>
-            </div> -->
             <button>Register Now</button>
         </div>
-        
-
         
         <h1>Solitary Maximizing</h1>
         <h1>Students Experience</h1>
         <h2>At Solitary, we aim to enhance your experience by optimizing your performance through collaboration and community growth.</h2>
-      
-        <div class="info">
-            <div class="info-item1">
-                <h3>20+</h3>
-                <p>Collaborations with Clubs and Societies</p>
+        
+       
+        <div class="info-section">
+            
+            <div>
+                <div class="info-box1">
+                    <h3>20+</h3>
+                    <p>Collaborations with Clubs and Societies</p>
+                </div>
+                <div class="info-box2">
+                    <h3>500+</h3>
+                    <p>Community Base</p>
+                </div>
             </div>
-            <div class="info-item2">
-                <h3>500+</h3>
-                <p>Community Base</p>
-            </div>
-            <img src="character.png" alt="Character" class="character">
-            <div class="info-item3">
+
+            <!-- img -->
+            <img src="image.png" alt="Character" class="character">
+
+            
+            <div class="info-box3">
                 <p>This website is designed for community service of IITM BS</p>
             </div>
         </div>
     </div>
+
     <div class="footer">
-        <p>&copy; 2023 Solitary - All Rights Reserved</p>
+        <p>&copy;2023 Solitary - All Rights Reserved</p>
     </div>
+    <script src="script.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-    <script src="script.js"></script>
-    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- GSAP Animations -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Smooth Scroll Triggered Animations
+        gsap.from("h1", {
+            opacity: 0,
+            x: -100,
+            duration: 1,
+            // scrollTrigger: {
+            //     trigger: "h1",
+            //     start: "top 80%",
+            //     end: "bottom 20%",
+            //     scrub: true
+            // }
+        });
+        gsap.from("h2", {
+            opacity: 0,
+            x: 200,
+            duration: 1.5,
+            // scrollTrigger: {
+            //     trigger: "h1",
+            //     start: "top 80%",
+            //     end: "bottom 20%",
+            //     scrub: true
+            // }
+        });
+
+            // Color Change on Scroll for Background
+    // gsap.to("body", {
+    //     background: "linear-gradient(115deg, #1A1A3C, #512B58, #800080)", // New colors
+    //     duration: 2,
+    //     scrollTrigger: {
+    //         trigger: ".info-item2",
+    //         start: "top 50%",
+    //         end: "bottom 10%",
+    //         scrub: true
+    //     }
+    // });
+        gsap.from(".info-box1", {
+            opacity: 0,
+            y: 200,
+            stagger: 0.3,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".info-section",
+                start: "top 90%",
+                end: "bottom 30%",
+                scrub: true
+            }
+        });
+
+        gsap.from(".info-box2", {
+            opacity: 0,
+            y: 200,
+            stagger: 0.3,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".info-section",
+                start: "top 90%",
+                end: "bottom 30%",
+                scrub: true
+            }
+        });
+        gsap.from(".info-box3", {
+            opacity: 0,
+            y: 200,
+            stagger: 0.3,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".info-section",
+                start: "top 90%",
+                end: "bottom 30%",
+                scrub: true
+            }
+        });
+
+
+        // Floating Image Parallax Effect
+        gsap.from(".character", {
+            y: 100,
+            duration: 1.5,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: ".character",
+                start: "top 85%",
+                end: "bottom 40%",
+                scrub: true
+            }
+        });
+
+        gsap.from(".footer", {
+            opacity: 0.09,
+            y: 90,
+            duration: 3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                end: "bottom 20%",
+                scrub: true
+            }
+        });
+        gsap.to(".character", {
+            y: "-=40", 
+            repeat: -1,
+            yoyo: true, 
+            ease: "power1.inOut",
+            duration: 1.6 
+        });
+
+    </script>
 </body>
 </html>
