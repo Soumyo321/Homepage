@@ -260,13 +260,14 @@
             duration: 1.5
         });
 
-        // gsap.from(".options a, .options button", {
-        //     opacity: 0,
-        //     y: -80,
-        //     duration: 1.5,
-        //     stagger: 0.2,
-        //     ease: "power2.out"
-        // });
+        
+        gsap.from(".options", {
+            opacity: 0,
+            y: -80,
+            duration: 1.5,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
 
         gsap.from(".info-box1, .info-box2, .info-box3", {
             opacity: 0,
